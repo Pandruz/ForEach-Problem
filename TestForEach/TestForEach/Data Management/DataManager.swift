@@ -15,13 +15,14 @@ class DataManager : Equatable, Identifiable, ObservableObject {
     @Published var storageValues : [ValuesModel] = []
     typealias StorageValues = [ValuesModel]
     
-    
-    @Published var storageFolder : [FolderModel] = []
+    #warning("TODO: Dummy Data added here needs removed")
+    @Published var storageFolder : [FolderModel] = [FolderModel(name: "😀")]
     typealias StorageFolders = [FolderModel]
     
     let objectWillChange = PassthroughSubject<Void, Never>()
     
-    init() { load() }
+    #warning("TODO: This removes the values in storageFolder")
+    // init() { load() }
     
     
     var filePathValues : String = ""

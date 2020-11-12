@@ -16,8 +16,9 @@ struct ValuesView: View {
     
     
     var body: some View {
-        Form {
-            ForEach(cm.values, id: \.id) { valuesForEach in
+        #warning("TODO: Having Form here is preventing the text from displaying.. im not sure why")
+        //Form {
+            ForEach(vm) { valuesForEach in
                 
 //                NavigationLink() This works correctly
                         Text(valuesForEach.name)
@@ -25,7 +26,7 @@ struct ValuesView: View {
 
                     
             }
-        }
+       // }
     }
 }
 

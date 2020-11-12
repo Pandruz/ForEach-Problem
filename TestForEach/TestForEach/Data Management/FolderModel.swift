@@ -12,7 +12,8 @@ class FolderModel : Codable, Identifiable, Equatable, ObservableObject  {
 
     var id = UUID()
     var name : String
-    var values : [ValuesModel] = []
+    #warning("TODO: Dummy Data added here needs removed")
+    var values : [ValuesModel] = [ValuesModel(name: "", features: "", expiring: Date(), folder: "", selectedForAFolder: false)]
     
     init(name: String) {
         self.name = name

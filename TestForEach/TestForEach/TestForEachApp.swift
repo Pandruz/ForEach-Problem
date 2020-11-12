@@ -11,8 +11,7 @@ import SwiftUI
 struct TestForEachApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(cm: folderDemo, dm: DataManager(), valview: ValuesView(cm: folderDemo, dm: DataManager(), vm: folderDemo.values))
-            
+            ContentView(cm: folderDemo, dm: DataManager())
         }
     }
 }
